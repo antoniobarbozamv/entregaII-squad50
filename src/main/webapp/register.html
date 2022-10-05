@@ -50,11 +50,11 @@
             <span class="d-block">Já possui uma conta? <a href="./index.html">Entre aqui</a></span>
           </div>
           <!-- Form START -->
-          <form class="mt-4">
+          <form action="Registrar" method="post" class="mt-4">
             <!-- Nome -->
             <label for="nome" class="fs-5">Seu nome:</label>
             <div class="mb-3 input-group-lg">
-                <input type="text" class="form-control" placeholder="Digite seu nome">
+                <input type="text" name="nome" class="form-control" placeholder="Digite seu nome">
             </div>
             <!-- Checkbox -->
             <div class="form-check d-inline-flex m-1">
@@ -84,7 +84,7 @@
             <!-- Email -->
             <label for="email" class="fs-5 d-flex">E-mail:</label>
             <div class="mb-3 input-group-lg">
-              <input type="email" class="form-control" placeholder="Digite seu e-mail">
+              <input type="email" name="email" class="form-control" placeholder="Digite seu e-mail">
             </div>
             <!--Data Nasc-->
             <div class=" fs-5">
@@ -96,7 +96,7 @@
               <!-- Input group -->
               <label for="senha" class="fs-5">Senha:</label>
               <div class="input-group input-group-lg">
-                <input class="form-control" type="password" id="psw-input" placeholder="Digite sua senha">
+                <input class="form-control" name="senha" type="password" id="psw-input" placeholder="Digite sua senha">
               </div>
             </div>
             <!-- Confirm password -->
