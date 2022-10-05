@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Kantumruy+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300; 1,400;1,500;1,600;1,700 & família= Lagosta & família= Mukta:wght@200;300;400;500;600;700;800 & family= Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600; 0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & família= Aberto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,40; 1.600;1.700;1.800 & família= Oswald:wght@200;300;400;500;600;700 & family= Ubuntu:ital,wght@0.300;0,400;0,500;0,700;1,300;1,400;1,500;1,700& display=trocar');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+.wrapper{
+  position: relative;
+  margin-top: 20%;
+  margin-bottom: -20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 450px;
+  display: flex;
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+}
+
+.wrapper .left{
+  width: 35%;
+  background: linear-gradient(to right,#f012e5,#a608d6);
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+#rank{
+    font-size: large;
+    color: rgb(255, 202, 28);
+}
+
+.wrapper .left img{
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.wrapper .left h4{
+  margin-bottom: 10px;
+}
+
+.wrapper .left p{
+  font-size: 12px;
+}
+
+.wrapper .right{
+  width: 65%;
+  background: #fff;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapper .right .info,
+.wrapper .right .projects{
+  margin-bottom: 25px;
+}
+
+.wrapper .right .info h3,
+.wrapper .right .projects h3{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper .right .info_data,
+.wrapper .right .projects_data{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .right .info_data .data,
+.wrapper .right .projects_data .data{
+  width: 45%;
+}
+
+.wrapper .right .info_data .data h4,
+.wrapper .right .projects_data .data h4{
+    color: #353c4e;
+    margin-bottom: 5px;
+}
+
+.wrapper .right .info_data .data p,
+.wrapper .right .projects_data .data p{
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #919aa3;
+}
+
+.wrapper .social_media ul{
+  display: flex;
+}
+
+.wrapper .social_media ul li{
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(to right,#a007b4,#8607ee);
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.wrapper .social_media ul li a{
+  color :#fff;
+  display: block;
+  font-size: 18px;
+}
+
+.Title-post{
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card{
+  margin-top: 3%;
+}
+
+.picture-profile{
+  border-radius: 100%;
+  margin-right: 1%;
+}
+.text-post{
+font-family: 'Oswald', sem serifa;
+}
+.subline-text-post{
+  color: #5b5b5e;
+  font-family: 'Oswald', sem serifa;
+  margin-left: 6%;
+  margin-top: -3%;
+}
+
+.search-box {
+  background: #b6b6b6;
+  height: 50px;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+::-webkit-input-placeholder{
+  color: #d8d8d8;
+}
+
+.search-text{
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #120746;
+  font-size: 16px;
+  line-height: 40px;
+  width: 0;
+  transition: .4s;
+  font-family: 'Open Sans', sans-serif;;
+}
+
+.search.btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e4eef6 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.search-box:hover > .search-text {
+  width: 240px;
+  padding: 0 6px;
+}

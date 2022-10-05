@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background: rgb(180,230,252);
+  background: radial-gradient(circle, rgba(180,230,252,1) 0%, rgba(227,227,227,1) 100%);
+}
+
+#parallax {
+    background-image: url(/imagens/who2.jpg);
+    background-color: black;
+    background-attachment: fixed;
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.whos {
+    text-align:justify; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.search-box {
+  background: #b6b6b6;
+  height: 50px;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+::-webkit-input-placeholder{
+  color: #d8d8d8;
+}
+
+.search-text{
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #120746;
+  font-size: 16px;
+  line-height: 40px;
+  width: 0;
+  transition: .4s;
+  font-family: 'Open Sans', sans-serif;;
+}
+
+.search.btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e4eef6 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.search-box:hover > .search-text {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.footerbg {
+  background-color:  #3c4a78;
+}
+
+.registerbgcolor {
+  background: rgb(72,132,205);
+  background: linear-gradient(0deg, rgba(72,132,205,1) 0%, rgba(127,174,233,1) 18%, rgba(228,238,246,1) 96%);
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}

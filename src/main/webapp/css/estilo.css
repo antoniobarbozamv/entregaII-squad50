@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2? family= Kantumruy+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300; 1.400;1.500;1.600;1.700 & family= Lagosta & family= Mukta:wght@200;300;400;500;600;700;800 & family= Open+Sans:ital,wght@0,300;0,400;0,500;0,600; 0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800 & família= Oswald:wght@200;300;400;500;600;700 & family= Ubuntu:ital,wght@0,300;0,400;0,500;0,700; 1.300;1.400;1.500;1.700 & display=trocar');
+/* Gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+p,
+li {
+    color: #444;
+    font-size: 14px;
+}
+
+/* Barra de navegação */
+/* header,
+.navbar {
+    background: rgb(209, 209, 209);
+} */
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 55px;
+}
+
+.search-box {
+    background: #b6b6b6;
+    height: 50px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+::-webkit-input-placeholder{
+    color: #d8d8d8;
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #120746;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .4s;
+    font-family: 'Open Sans', sans-serif;;
+}
+
+.search.btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e4eef6 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search-box:hover > .search-text {
+    width: 240px;
+    padding: 0 6px;
+}
+
+
+.navbar-brand {
+    padding: 0;
+    color: #e4eef6;
+}
+
+.navbar-brand:hover {
+    color: #e4eef6;
+}
+
+#navbar-links a {
+    color: #1653aa;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+.nav-item.active {
+    border-bottom: 3px solid #FFF;
+}
+
+.navbar-custom{
+    background-color: transparent !important;
+    color: white;
+    position:absolute;
+    z-index:10;
+    background:#fff;
+    width:100%;
+    text-shadow: rgba(0, 0, 0, 0.192) 0.1em 0.1em 0.2em;
+    border-bottom: 0.8px solid rgba(255, 255, 255, 0.308);
+    margin-top: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

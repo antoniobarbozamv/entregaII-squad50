@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!------ twitter-bootstrap -------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <!------ Font Awesome 5.15.4 ------------>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!------ CSS ---------------------------->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style-form.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/estilo.css">
+  <!------ jquery ------------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <!------ Bootstrap 5 -------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+  crossorigin="anonymous">
+  <!------ Bootstrap Icons ---------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!------ Scripts ------------------------>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Feed | Study.me</title>
+</head>
+
+<body style="background-color:#e4eef6;">
+
+<!-------- Responsividade ---------------------------------------->
+<!-------- Acessibilidade - documentação falando sobre ARIA no 
+feed no grupo de lembrete - ver sobre div class click-stealer ---->
+<header>
+  <!-------- Navbar Start --------------------------------->
+  <nav style="font-family:Josefin Sans, sans-serif;" class="navbar fixed-top navbar-expand-sm navbar-light bg-light mb-5">
+    <div class="flex-container">    
+      <a href="./feed.html" class="navbar-brand mb-0 h1" id="nav-logo">
+      <div class="logo"><img class="d-inline-block align-top" src="./imagens/iconstudyme.jpeg" width="30" height="30"/>
+      </div>
+      Study.me
+      </a>
+    </div>    
+    <!-------- Tirar efeito do pesquisar quando md ou menor -->
+    <!-------- Barra de pesquisa pode ir para o hamburguer --->
+    <!-------- Section "Pesquisar" Start -------------->
+    <div class="search-box">
+          <input type="text" class="search-text" placeholder="Pesquisar">
+          <a class="search-btn" href="#">
+              <img src="./imagens/loupe (1).png" alt="Lupa" height="25px">
+          </a>
+    </div>
+    
+    <button
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-------- Section "Pesquisar" End ---------------->
+    <!-------- Section "nav-list" Start ---------------> 
+    <div class="collapse navbar-collapse d-md-flex flex-row-reverse bd-highlight flex-wrap" id="navbarNav">
+          <ul class="navbar-nav flex-wrap">
+            <li class="nav-item">
+              <a href="./pagina-aluno.html" class="nav-link">
+                Area do aluno
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./pagina-escola.html" class="nav-link">
+                Escolas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./pagina-empresa.html" class="nav-link">
+                Empresas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./feed.html" class="nav-link active" 
+              aria-current="page">
+                Feed
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">
+                Sair
+              </a>
+            </li>
+          </ul>
+    </div>
+    <!-------- Section "nav-list" End -----------------> 
+  </nav>
+  <!-------- Navbar End ----------------------------------->    
+    </header>
+    
+    <div class="container-fluid pt-5 mt-5">
+      <div class="row">
+        <!-------- Tentar efeito do sidebar do site modelo - 
+        sidebar vira my profile quando md ou menor -------->
+        <!-------- Se inspirar no sidebar do site modelo -->
+        <!-------- Sidebar Start -------------------------->
+        <div class="col-3">
+          <div class="card perfil">
+            <img class="card-img-top" src="./imagens/user.svg" alt="user image">
+            <div class="card-body">
+              <h5>Letícia Peixoto</h5>
+              <p>Estudante do Ensino Médio</p>
+              <figure>
+                <img src="./imagens/rating.svg" alt="ilustração de estrelas representando o rating do usuário">
+                <figcaption class="text-center">Rating</figcaption>
+              </figure>
+            </div> 
+          </div>
+          <div class="container p-0 mt-3">
+            <div class="card perfil">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="#" class="card-link"">Amigos</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="card-link">Notas</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="card-link">Instituições</a>
+                </li>
+              </ul>     
+            </div> 
+          </div>
+        </div>
+        <!-------- Sidebar End ------------------------->
+        <!-------- Melhorar visual Section Publicar ---->
+        <div class="col-9">
+          <!-------- Section Publicar Start ------------>
+          <div class="container mb-3">
+            <label for="formPublish" class="form-label">
+              O que você aprendeu hoje?
+            </label>
+            <textarea class="form-control" id="formPublish" rows="2">
+            </textarea>
+            <div class="d-flex flex-row-reverse mt-3">
+              <button type="submit" class="btn btn-primary">
+                Publicar
+              </button>
+            </div>  
+          </div>
+          <!------- Section Publicar End ----------->
+          <!-------- Melhorar visual Section Feed -->
+          <!-------- Section Feed Start ------------>
+          <div class="container mt-5">
+            <!-------- Publicação Start ------------>
+            <div class="card">
+              <div class="card-header">
+                <h6>Mário Dias</h6>
+                <p>Estudante do Ensino Médio</p>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae pariatur et nisi enim sint 
+                  quae, eaque nostrum inventore? Provident dolore facere asperiores quae quidem.
+                </p>
+                <!------ Tentar incluir sugestão para adicionar amigo --->
+                <!------ Ícones - associar à responsavidade dos botões -->
+                <button class="btn btn-outline-primary">
+                  Gostei
+                </button>
+                <button class="btn btn-outline-primary">
+                  Comentar
+                </button>
+                <button class="btn btn-outline-primary">
+                  Compartilhar
+                </button>
+                <button class="btn btn-outline-primary">
+                  Enviar
+                </button> 
+                <!------ Ícones ----------------------------------------> 
+              </div>
+            </div>
+            <!-------- Publicação End -------------->
+            <!-------- Publicação Start ------------>
+            <div class="card mt-5">
+              <div class="card-header">
+                <h6>Flávia Torres</h6>
+                <p>Estudante do Ensino Médio</p>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptates consequuntur ea placeat 
+                  architecto quas voluptate aspernatur incidunt quis eius laudantium dignissimos doloribus ad, porro ratione alias
+                  maiores labore asperiores illo deserunt suscipit pariatur at. Exercitationem maxime incidunt impedit earum iste 
+                  quia, voluptates modi vitae.
+                </p>
+                <!-------- Ícones ----------------->
+                <button class="btn btn-outline-primary">
+                  Gostei
+                </button>
+                <button class="btn btn-outline-primary">
+                  Comentar
+                </button>
+                <button class="btn btn-outline-primary">
+                  Compartilhar
+                </button>
+                <button class="btn btn-outline-primary">
+                  Enviar
+                </button>
+                <!-------- Ícones ----------------->  
+              </div>
+            </div>
+            <!-------- Publicação End -------------->
+            <!-------- Publicação Start ------------>
+            <div class="card mt-5 mb-5">
+              <div class="card-header">
+                <h6>Caio Monteiro</h6>
+                <p>Estudante do Ensino Médio</p>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, possimus.
+                </p>
+                <!-------- Ícones ----------------->
+                <button class="btn btn-outline-primary">
+                  Gostei
+                </button>
+                <button class="btn btn-outline-primary">
+                  Comentar
+                </button>
+                <button class="btn btn-outline-primary">
+                  Compartilhar
+                </button>
+                <button class="btn btn-outline-primary">
+                  Enviar
+                </button>
+                <!-------- Ícones ----------------->
+              </div>
+              <!-------- Publicação End -------------->
+            </div>
+          </div>
+          <!------- Section Feed End ------------------------------------>
+          <!------- Final do feed com Load More ------------------------->
+          <!------- Dá pra incluir Who to follow e todays news? --------->    
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

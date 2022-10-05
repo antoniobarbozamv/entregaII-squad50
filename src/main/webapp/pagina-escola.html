@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!------ twitter-bootstrap -------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <!------ Font Awesome 5.15.4 ------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!------ CSS ---------------------------->
+    <link rel="stylesheet" href="./css/style-ifr.css">
+    <link rel="stylesheet" href="./css/style-form.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/style-perfil.css">
+    <!------ Falta unificar CSS do profile -->
+    <!------ jquery ------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <!------ Bootstrap 5 -------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!------ Bootstrap Icons ---------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> 
+    <!------ Scripts ------------------------>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Perfil | Study.me</title>
+</head>
+    
+<body style="background-color:#e4eef6;">
+    <!-------- Responsividade ---------------------------------->
+    <!-------- Acessibilidade - documentação falando sobre ARIA no feed no grupo 
+    de lembrete - ver sobre div class click-stealer ------------>
+    <header>
+        <!-------- Navbar Start -------------------------------->
+        <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light mb-5">
+            <a href="#" class="navbar-brand mb-0 h1">
+            <img class="d-inline-block align-top" src="./imagens/STUDY.ME-logo.png" width="30" height="30" />
+                Study.me
+            </a>
+            <!-- Mesmo nav do feed.html ------------------------>
+            <!-- Tirar efeito do pesquisar quando md ou menor -->
+            <!-- Barra de pesquisa pode ir para o hamburguer --->
+            <!-------- Section "Pesquisar" Start --------------->
+            <div class="search-box">
+                <input type="text" class="search-text" placeholder="Pesquisar">
+                <a class="search-btn" href="#">
+                    <img src="./imagens/loupe (1).png" alt="Lupa" height="25px">
+                </a>
+            </div>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-------- Section "Pesquisar" End ---------------->
+            <!-- Botão não está funcionando, ver se mantém após 
+            padronizar head ----------------------------------->
+            <div class="collapse navbar-collapse d-md-flex flex-row-reverse 
+            bd-highlight flex-wrap" id="navbarNav">
+                <!--------Verificar ARIA em todas as divs, no 
+                documento como um todo ------------------------>
+                <!-------- Section "nav-list" Start ----------->
+                <ul class="navbar-nav flex-wrap">
+                    <li class="nav-item">
+                        <a href="./pagina-aluno.html" class="nav-link" aria-current="page">
+                            Área do aluno
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./pagina-escola.html" class="nav-link active">
+                            Escolas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./pagina-empresa.html" class="nav-link">
+                            Empresas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./feed.html" class="nav-link">
+                            Feed
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">
+                        Sair
+                        </a>
+                    </li>
+                </ul>
+                <!-------- Section "nav-list" End ----------->
+            </div>
+        </nav>
+        <!-------- Navbar End -------------------------------->
+    </header>
+    <div class="container pt-5 mt-5">
+        <div class="row">
+            <!-- Tentar fazer perfil como no site modelo, o 
+            mesmo utilizado no pagina-aluno.html mas no lugar 
+            do Section Friends teremos Section Alunos -------->
+            <div class="wrapper">
+                <!------ Transformar em section card? -------->
+                <div style="background: linear-gradient(to right,#3777ee,#49afaf);" class="left">
+                    <img src="./imagens/Escola.jpg" alt="user" width="100px">
+                    <h4>
+                        Colégio Sant Dai
+                    </h4>
+                    <p>
+                        Instituição de ensino
+                    </p>
+                    <p id="rank">
+                        Ranking
+                    </p>
+                    <img src="./imagens/rating.svg" alt="ilustração de estrelas representando o rating do usuário">
+                </div>
+                <div class="right">
+                    <!------ Section info Start ------------->
+                    <div class="info">
+                        <h3>Informações</h3>
+                        <div class="info_data">
+                            <div class="data">
+                                <h4>Email</h4>
+                                <p>ColegSant@gmail.com</p>
+                            </div>
+                            <div class="data">
+                                <h4>Telefone</h4>
+                                <p>(21)91624-3058</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!------ Section info End --------------->
+                    <!------ Section projects Start --------->
+                    <div class="projects">
+                        <h3>Projetos</h3>
+                        <div class="projects_data">
+                            <div class="data">
+                                <h4>
+                                    Recentes
+                                </h4>
+                                <p>
+                                    Fundador do projeto Escola+Vida incentivando crianças e adolescentes a prática da leitura.
+                                </p>
+                            </div>
+                            <div class="data">
+                                <h4>
+                                    Mais informações
+                                </h4>
+                                <p>
+                                    Aberto para visitações
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!------ Section projects End ---------->
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+        <!---- Mesma Section Publicar utilizada no Feed ------------> 
+        <!---- Section Publicar Start ------------------------------>
+        <div class="container">
+            <form>
+                <label for="formPublish">
+                    O que você tem a ensinar hoje?
+                </label>
+                <textarea class="form-control" id="formPublish" rows="2">
+                </textarea>
+                <div class="d-flex flex-row-reverse mt-3">
+                    <button type="submit" class="btn btn-primary">
+                        Publicar
+                    </button>
+                </div>
+            </form>
+        </div>
+    <!--- Section Publicar End ------------------------------------->
+    <!--- Section Feed Start - somente as proprias publicações ----->
+    <!--- Mesmo Section Feed do feed.html - sem sugestão de amigo -->
+    <!--- Section Feed Start --------------------------------------->
+    <div class="container mt-3">
+        <!-------- Publicação Start -------------------------------->
+        <div class="card">
+            <div class="card-header">
+                <h6 class="text-post"><img class="picture-profile" src="./imagens/Escola.jpg" alt="imagem perfil" width="40px">
+                    Escola Sant Dai
+                </h6>
+                <p class="subline-text-post">Instituição de ensino</p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Ontem tivemos o prazer de receber os alunos Mario Dias, Leticia peixoto e Caio Monteiro para o
+                    projeto Escola+vida, projeto que incentiva adolescentes e crianças ao hábito da leitura!
+                    #LeréBomDemais #EscolaSantDai #Leitura
+                </p>
+                <!---- Avaliar responsividade/tamanho das mídias, 
+                assim como no feed pagina-empresa.html ------------>
+                <img src="./imagens/alunos-lendo.jpg" alt="Alunos lendo em uma biblioteca" width="700px">
+                <!------ Ícones ----------------------------------->
+                <button class="btn btn-outline-primary">
+                    Gostei
+                </button>
+                <button class="btn btn-outline-primary">
+                    Comentar
+                </button>
+                <button class="btn btn-outline-primary">
+                    Compartilhar
+                </button>
+                <button class="btn btn-outline-primary">
+                    Enviar
+                </button>
+                <!------ Ícones ----------------------------------->
+            </div>
+        </div>
+        <!-------- Publicação End --------------------------------->
+        <!-------- Publicação Start ------------------------------->
+        <div class="card">
+            <div class="card-header">
+                <h6 class="text-post">
+                <img class="picture-profile" src="./imagens/Escola.jpg" alt="imagem perfil" width="40px">
+                    Escola Sant Dai
+                </h6>
+                <p class="subline-text-post">Instituição de ensino</p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    É com muito orgulho e alegria que anunciamos a formatura dos nossos inacianos do Ensino Médio da EJA
+                    e dos cursos profissionalizantes das turmas de 2022.1. 🎓📚
+                </p>
+                <p>
+                    A cerimônia de conclusão contou com a tradicional entrega dos canudos e com uma celebração presidida pelo 
+                    diretor-geral, Milton Silva.
+                </p>
+                <p>
+                    Nós, do Colégio Sant Dai, estamos muito felizes em fazer parte dessa trajetória e em poder contribuir para 
+                    mais essa etapa concluída na vida dos nossos queridos alunos. 👩‍🎓👨‍🎓 Parabéns aos formandos por essa vitória 
+                    e por tantas outras que estão por vir!
+                </p>
+                <p>
+                    #EscolaSantDai #Formandos #Formatura #orgulhoDeSerSantDai
+                </p>
+                <!---- Avaliar responsividade/tamanho das mídias, 
+                assim como no feed pagina-empresa.html ------------>
+                <img src="./imagens/Aluninhos.jpg" alt="Alunos comemorando em uma festa de formatura" width="700px">
+                <!------ Ícones ----------------------------------->
+                <button class="btn btn-outline-primary">
+                    Gostei
+                </button>
+                <button class="btn btn-outline-primary">
+                    Comentar
+                </button>
+                <button class="btn btn-outline-primary">
+                    Compartilhar
+                </button>
+                <button class="btn btn-outline-primary">
+                    Enviar
+                </button>
+                <!------ Ícones ----------------------------------->
+            </div>
+        </div>
+        <!-------- Publicação End --------------------------------->
+    </div>
+    <!------- Section Feed End ------------------------------------>
+    <!------- Tentar adicionar Section About no perfil ------------>
+    <!------- Tentar adicionar Section Photos no perfil ----------->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+</body>
+
+</html>

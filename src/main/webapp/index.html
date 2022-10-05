@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<!------- Padronizar head ---------------->
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!------ twitter-bootstrap -------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <!------ Font Awesome 5.15.4 ------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!------ CSS ---------------------------->
+    <link rel="stylesheet" href="./css/style-ifr.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <!------ Falta unificar CSS do profile -->
+    <!------ jquery ------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <!------ Bootstrap 5 -------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+    crossorigin="anonymous">
+    <!------ Bootstrap Icons ---------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!------ Scripts ------------------------>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Study.me </title>
+</head>
+
+<body>
+
+    <!------ Navbar ----------------------> 
+    <header>
+        <div class="container p-0">
+        <nav style="font-family:Josefin Sans, sans-serif;" class="navbar navbar-expand-sm navbar-light navbar-custom ">
+            <a href="./feed.html" class="navbar-brand mb-0 h1"><i class="fas fa-graduation-cap"></i> Study.me
+            </a>
+            
+            <button
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse d-md-flex flex-row-reverse bd-highlight flex-wrap" id="navbarNav">
+                <ul class="navbar-nav flex-wrap">
+                    <li class="nav-item">
+                        <a href="#sobrenos" class="nav-link">
+                        Sobre nós
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html"><i class=" fa fa-fw fa-user-circle"></i>  Entrar/Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
+
+
+    <!------ Section "Tipos de perfis" ------------------------->
+    <div class="container-fluid p-5 ">
+        <div class="container text-dark">
+            <div class="row" style="text-align:center">
+                <h3 class="col-12 mb-3">Entre Como:</h3>
+                <div class="col-sm">
+                    <img src="./imagens/student.png" alt="ilustração fofinha de um aluno" width="128px"/> 
+                    <h2 class="fw-normal">Aluno</h2>
+                </div>
+                <div class="col-sm">
+                    <img src="./imagens/school.png" alt="ilustração de uma escola"/> 
+                    <h2 class="fw-normal">Escola</h2>
+                </div>
+                <div class="col-sm">
+                    <img src="./imagens/instituição.png" alt="ilustração de uma escola"/> 
+                    <h2 class="fw-normal">Instituição</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------ Section "Tipos de perfis" ------------------------->
+
+    <!------ Section "Quem somos" ------------------------------>
+    <!------ Tentar fazer landing page (about) do site modelo -->
+    <div class="container-fluid back1">
+            <div class="row justify-content-md-center text-light" id="sobrenos">
+                <div class="col-sm p-4 bg-light">
+                    <!------ Não dá pra ler bem o texto -------->
+                    <h3 class="whos"><strong>Quem somos:</strong></h3>
+                    <p class=" container lead whos"> <i class="fas fa-check"></i> A study.me é uma rede educativa que tem o intuito de conectar alunos, escolas e instituições, favorecendo assim o protagonismo do aluno e gerando maior engajamento nos seus estudos e na sua participação cidadã. </p>
+                </div>
+                <div class="col-sm">
+                    <!------ Propor paleta de cor do gif --------->
+                    <img class="col-sm p-0" src="./imagens/who2.gif" style="width:fit-content; height:fit-content;">
+                </div>
+            </div>
+    </div>
+    <!------ Section "Quem somos" ------------------------------>
+
+    <!------ Section "Visão" ----------------------------------->
+    <div class="container-fluid align-items-stretch p-3 px-4 py-5 back1" id="hanging-icons">
+        <h2 class="pb-2"><strong></strong></h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+            <div class="icon-square text-light flex-shrink-0 me-3">
+                <img src="./imagens/partnership.png" alt="ilustração de quatros pessoas segurando peças de um quebra-cabeça" style="max-height: 100px;">
+            </div>
+            <div>
+                <h2>Compartilhar e Conectar</h2>
+                <p class="lead">Conectamos alunos, escolas, professores e organizações em uma só rede compartilhando conhecimentos e trocas de experiências..</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square text-light flex-shrink-0 me-3">
+                <img src="./imagens/mortarboard.png" alt="ilustração de um chapéu de formatura" style="max-height: 100px;">
+            </div>
+            <div>
+                <h2>Aluno Protagonista</h2>
+                <p class="lead">Aprendizado através de metologias ativas, aluno se torna protagonista no seu processo de ensino-aprendizado, gerando assim engajamento no seus estudos.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square text-light flex-shrink-0 me-3">
+                <img src="./imagens/teamwork.png" alt="ilustração de três mãos dadas" style="max-height: 100px;">
+            </div>
+            <div>
+                <h2>Participação Social</h2>
+                <p class="lead">Encorajamos os alunos a se tornarem também protagonistas na sociedade, contribuindo para uma educação e ensino de qualidade.</p>
+            </div>
+        </div>
+        </div>   
+    </div>
+    <!------ Section "Visão" ------------------------------->
+
+    <!------ Footer ---------------------------------------->
+    <footer class=" text-center footer footerbg">
+        <div class="container p-4">
+            
+            <!------ Section "Social media" -------------------->
+            <section class="mb-4">
+                <a href="#!"><i class="bi-facebook fs-3"></i></a>
+                
+                <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                
+                <a href="#!"><i class="bi-instagram fs-3"></i></a>
+            </section>
+            <!------ Section "Social media" -------------------->
+            
+            
+            <!------ Section "Newsletter" ------------------->
+            <section class="">
+                <form action="">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-auto">
+                        <p class="pt-2 text-light" style="text-shadow: black 0.1em 0.1em 0.2em;">
+                            <strong>Assine nossa newsletter e receba ofertas.</strong>
+                        </p>
+                    </div>
+                    
+                    <div class="col-md-5 col-12">
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form5Example2" class="form-control" />
+                            <label class="form-label text-light" for="form5Example2" style="text-shadow: black 0.1em 0.1em 0.2em;">Endereço de email</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-4">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+                </form>
+            </section>
+            <!------ Section "Newsletter" ------------------>
+        </div>
+        <!------ Copyright --------------------------------->
+        <div class="text-center text-light p-3" style="background-color: #7faee9; text-shadow: black 0.1em 0.1em 0.2em;">
+            © 2022 Copyright: Study.me
+        </div>
+        <!------ Copyright --------------------------------->      
+    </footer>
+    <!------ Footer ---------------------------------------->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
